@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #7A0616; /* Deep Dark Red */
+    --accent-color: #D4AF37;  /* Buddhist Gold */
+    --dark-surface: #1E1E1E;
+    --light-bg: #F8F9FA;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: 'Kantumruy Pro', sans-serif;
+    background-color: var(--light-bg);
+    overflow-x: hidden;
+}
+
+/* Header Adjustments */
+.navbar-custom {
+    background-color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    color: white;
+}
+
+.navbar-custom .navbar-brand {
+    color: var(--accent-color) !important;
+    font-weight: 700;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    min-width: 260px;
+    max-width: 260px;
+    background-color: var(--primary-color);
+    border-right: 3px solid var(--accent-color);
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#sidebar ul li a:hover, #sidebar ul li.active > a {
+    color: var(--primary-color);
+    background: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Card Metrics Layout */
+.dashboard-card {
+    background: white;
+    border-radius: 12px;
+    border: none;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header-gold {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Buttons Theme */
+.btn-pagoda {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.btn-pagoda:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+/* Print Optimization */
+@media print {
+    #sidebar, .navbar, .btn, .no-print, form {
+        display: none !important;
+    }
+    .main-content {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}

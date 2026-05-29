@@ -1,0 +1,8 @@
+</main>
+</div> <footer class="bg-dark text-white text-center py-3 border-top border-warning no-print">
+    <small>© 2026 វត្តដីដុះ - រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ DeyDospagoda Engineering Team</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
